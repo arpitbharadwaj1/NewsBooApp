@@ -5,17 +5,17 @@ import PropTypes from 'prop-types'
 
 export default class News extends Component {
 
-    defaultProps = {
-        country: 'in',
-        pageSize: 8,
-        category: 'general'
-    }
+    // defaultProps = {
+    //     country: 'in',
+    //     pageSize: 8,
+    //     category: 'general'
+    // }
 
-    PropTypes = {
-        country: PropTypes.string,
-        pageSize: PropTypes.number,
-        category: PropTypes.string
-    }
+    // PropTypes = {
+    //     country: PropTypes.string,
+    //     pageSize: PropTypes.number,
+    //     category: PropTypes.string
+    // }
 
     articles = []
 
@@ -74,7 +74,7 @@ export default class News extends Component {
                 <div className="row">
                     {!this.state.loading && this.state.articles.map((element) => {
                         return <div className="col-md-4" key={element.url}>
-                            <NewsItem title={element.title} description={element.description} imageUrl={element.urlToImage} newsUrl={element.url}></NewsItem>
+                            <NewsItem title={element.title} description={element.description} imageUrl={element.urlToImage} newsUrl={element.url} author={element.author} date={element.publishedAt} source={element.source.name}></NewsItem>
                         </div>
                     })}
                 </div>
