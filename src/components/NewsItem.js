@@ -13,7 +13,7 @@ const NewsItem = (props) => {
                 <div className="card-body" style={{ color: props.mode === 'dark' ? 'white' : 'black', backgroundColor: props.mode === 'dark' ? 'black' : 'white' }}>
                     <h5 className="card-title">{title}</h5>
                     <p className="card-text">{description}</p>
-                    <p className='card-text'><small className='' >By {author ? author : 'unknown'} on {new Date(date).toLocaleString()}</small></p>
+                    <p className='card-text'><small>By {author ? author : 'unknown'} on {new Date(date).toLocaleString()}</small></p>
                     <a rel="noreferrer" href={newsUrl} target='_blank' className="btn btn-dark">Read more</a>
                 </div>
             </div>
