@@ -1,5 +1,5 @@
 import React from 'react'
-import loading from './loader.gif'
+import loading from '../assets/loader.gif'
 
 const Spinner = () => {
 
@@ -10,5 +10,7 @@ const Spinner = () => {
     )
 }
 
-export default Spinner;
+export default Spinner
+
+// /Users/arpitbharadwaj/Desktop/My-Personal/React-CWH/newsapp/src/assets/loader.gif
 
