@@ -10,7 +10,5 @@ const Spinner = () => {
     )
 }
 
-export default Spinner
-
-// /Users/arpitbharadwaj/Desktop/My-Personal/React-CWH/newsapp/src/assets/loader.gif
+export default Spinner;
 
